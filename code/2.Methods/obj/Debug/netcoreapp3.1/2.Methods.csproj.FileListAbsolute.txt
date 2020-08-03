@@ -1,0 +1,13 @@
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\bin\Debug\netcoreapp3.1\2.Methods.exe
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\bin\Debug\netcoreapp3.1\2.Methods.deps.json
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\bin\Debug\netcoreapp3.1\2.Methods.runtimeconfig.json
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\bin\Debug\netcoreapp3.1\2.Methods.runtimeconfig.dev.json
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\bin\Debug\netcoreapp3.1\2.Methods.dll
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\bin\Debug\netcoreapp3.1\2.Methods.pdb
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.csprojAssemblyReference.cache
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.AssemblyInfoInputs.cache
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.AssemblyInfo.cs
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.csproj.CoreCompileInputs.cache
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.dll
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.pdb
+C:\Users\MThomas\Desktop\CSharp-Mastery\code\2.Methods\obj\Debug\netcoreapp3.1\2.Methods.genruntimeconfig.cache
