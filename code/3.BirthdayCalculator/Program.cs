@@ -22,14 +22,8 @@ namespace _3.BirthdayCalculator
 
       var userInput = Console.ReadLine();
 
-      var parsedDate = DateTimeOffset.MinValue;
-
-      var succeeded = DateTimeOffset.TryParse(userInput, out parsedDate);
-
-      if (succeeded)
-      {
+      if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // can add var parsedDate inline in C#8
         return parsedDate;
-      }
       else
       {
         Console.WriteLine($"Oops, you entered an invalid date...\n");
