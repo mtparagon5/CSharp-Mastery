@@ -98,11 +98,16 @@ namespace HelloWorld
 
       #endregion methods
 
+      #region string interpolation
+      var amount = 500;
+      var string1 = $"I earned ${amount} this week.";
 
+      // strings on multiple lines
+      var string2 = $"Last week, though, I earned " + // pressing enter inside the "" will add a new line for you when in VS2019
+                    $"${amount * 2} :(";                   // this is useful for writing more readable code in longer examples
 
-      #region parsing
-
-
+      Console.WriteLine(string1);
+      Console.WriteLine(string2);
 
       #endregion parsing
     }
