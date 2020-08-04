@@ -18,18 +18,35 @@ namespace _3.BirthdayCalculator
 
     public static DateTimeOffset AskForDateOfBirth()
     {
-      Console.WriteLine($"What's your date of birth? ({CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern})");
 
-      var userInput = Console.ReadLine();
-
-      if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // can add var parsedDate inline in C#8
-        return parsedDate;
-      else
+      // while loop to avoid recursion - see original if/else loop below
+      while (true)
       {
-        Console.WriteLine($"Oops, you entered an invalid date...\n");
+        // Ask user for bday
+        Console.WriteLine($"What's your date of birth? ({CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern})");
+        // store user input
+        var userInput = Console.ReadLine();
 
-        return AskForDateOfBirth();
+        // validate user input
+        if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // can add var parsedDate inline in C#8
+          // if valid - break while loop
+          return parsedDate;
+        // if invalid - repeat
+        else
+        {
+          Console.WriteLine($"Oops, you entered an invalid date...\n");
+        }
       }
+
+      // old
+      //if (DateTimeOffset.TryParse(userInput, out var parsedDate)) // can add var parsedDate inline in C#8
+      //  return parsedDate;
+      //else
+      //{
+      //  Console.WriteLine($"Oops, you entered an invalid date...\n");
+
+      //  return AskForDateOfBirth();
+      //}
     }
   }
 }
