@@ -88,12 +88,15 @@ namespace _3.BirthdayCalculator
       // Display happy birthday if it's the user's bday or number of day's until next birthday
       Console.WriteLine((daysTilNextBirthday > 364 ? $"Well look at that! Today is your birthday :) HAPPY BIRTHDAY!!!\n" : $"Oh wow, your next birthday is in {daysTilNextBirthday:0} days!\n"));
 
+      // calculate time alive
+      var timeAlive = now - date;
+
       // Display user's time alive and age in human years and dog years
-      Console.WriteLine($"Fun fact #2! It looks like you've been alive {(now - date).Days} days, " +
-                          $"{(now - date).Hours} hours, " +
-                          $"{(now - date).Minutes} minutes, " +
-                          $"{(now - date).Seconds} seconds, " +
-                          $"and are {usersAge} years {(usersAge < 40 ? "old!" : "young ;)")} \n\t(...or {usersAge * 7} in dog years :P ) \n");
+      Console.WriteLine($"Fun fact #2! It looks like you've been alive {timeAlive.TotalDays:n0} days, " +
+                          $"{timeAlive.TotalHours:n0} hours, " +
+                          $"{timeAlive.TotalMinutes:n0} minutes, " +
+                          $"{timeAlive.TotalSeconds:n0} seconds, " +
+                          $"and are {usersAge} years {(usersAge < 40 ? "old!" : "young ;)")} (...or {usersAge * 7} in dog years :P ) \n");
     }
   }
 }
